@@ -1,7 +1,7 @@
 FutureYou is an app that gives you advice on what to do in a given situation based on your previous choices and their outcomes.
 
 
-- 
+-
 
 
 1. User selects type of decision they're facing
@@ -10,16 +10,18 @@ FutureYou is an app that gives you advice on what to do in a given situation bas
 
 _____
 
-App that gives you advice on how to make the most commonly difficult decisions of your life based on your previous life choices and preferences.
+App that gives you advice on how to make the most common difficult decisions of your life based on your previous life choices and preferences.
 
 
-Difficult Decisions:
-- When to quit your job
+Difficult Decisions:              | Options:                      | Based On:
+------------------------------------------------------------------------------------------
+- Whether to quit your job        | yes, no, try resolving issue  | happiness level, finance, type of career,
+                                                                    job suitability, management, toxic environment?
 - Whether to have children
 - Whether to get married
 - Who to date,
 	* looking to settle, short-term vs. long-term
-- Whether to rent or buy a house
+- Whether to rent or buy house
 	* finances, length of stay, want to customize your pad
 - Where to live
 	* finances, remote work
@@ -34,3 +36,6 @@ Needed to determine ideal decisions:
 - What user is interested in learning
 - What user likes to do
 - What user values
+- Level of adaptability (to environment, etc)
+
+App first asks all questions that are required to advise on each difficult desicion. When the user selects a decision to be advised on, app asks the remaining questions necessary for that particular desicion (or at least 3).
