@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ideal Outcomes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>New situation</th>
+      <th>Recommended decision</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ideal_outcomes.each do |ideal_outcome| %>
+      <tr>
+        <td><%= ideal_outcome.new_situation %></td>
+        <td><%= ideal_outcome.recommended_decision %></td>
+        <td><%= link_to 'Show', ideal_outcome %></td>
+        <td><%= link_to 'Edit', edit_ideal_outcome_path(ideal_outcome) %></td>
+        <td><%= link_to 'Destroy', ideal_outcome, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ideal outcome', new_ideal_outcome_path %>

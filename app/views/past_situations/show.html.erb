@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @past_situation.description %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @past_situation.user %>
+</p>
+
+<%= link_to 'Edit', edit_past_situation_path(@past_situation) %> |
+<%= link_to 'Back', past_situations_path %>

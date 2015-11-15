@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing User Decisions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Choice</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_decisions.each do |user_decision| %>
+      <tr>
+        <td><%= user_decision.choice %></td>
+        <td><%= link_to 'Show', user_decision %></td>
+        <td><%= link_to 'Edit', edit_user_decision_path(user_decision) %></td>
+        <td><%= link_to 'Destroy', user_decision, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User decision', new_user_decision_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Past situation:</strong>
+  <%= @past_outcome.past_situation %>
+</p>
+
+<p>
+  <strong>User decision:</strong>
+  <%= @past_outcome.user_decision %>
+</p>
+
+<%= link_to 'Edit', edit_past_outcome_path(@past_outcome) %> |
+<%= link_to 'Back', past_outcomes_path %>

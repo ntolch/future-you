@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>New situation:</strong>
+  <%= @ideal_outcome.new_situation %>
+</p>
+
+<p>
+  <strong>Recommended decision:</strong>
+  <%= @ideal_outcome.recommended_decision %>
+</p>
+
+<%= link_to 'Edit', edit_ideal_outcome_path(@ideal_outcome) %> |
+<%= link_to 'Back', ideal_outcomes_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Past Situations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @past_situations.each do |past_situation| %>
+      <tr>
+        <td><%= past_situation.description %></td>
+        <td><%= past_situation.user %></td>
+        <td><%= link_to 'Show', past_situation %></td>
+        <td><%= link_to 'Edit', edit_past_situation_path(past_situation) %></td>
+        <td><%= link_to 'Destroy', past_situation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Past situation', new_past_situation_path %>

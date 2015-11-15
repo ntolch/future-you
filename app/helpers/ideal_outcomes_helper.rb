@@ -1,0 +1,2 @@
+module IdealOutcomesHelper
+end

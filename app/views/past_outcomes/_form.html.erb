@@ -1,0 +1,25 @@
+<%= form_for(@past_outcome) do |f| %>
+  <% if @past_outcome.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@past_outcome.errors.count, "error") %> prohibited this past_outcome from being saved:</h2>
+
+      <ul>
+      <% @past_outcome.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :past_situation_id %><br>
+    <%= f.text_field :past_situation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_decision_id %><br>
+    <%= f.text_field :user_decision_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

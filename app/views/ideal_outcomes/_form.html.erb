@@ -1,0 +1,25 @@
+<%= form_for(@ideal_outcome) do |f| %>
+  <% if @ideal_outcome.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ideal_outcome.errors.count, "error") %> prohibited this ideal_outcome from being saved:</h2>
+
+      <ul>
+      <% @ideal_outcome.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :new_situation_id %><br>
+    <%= f.text_field :new_situation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :recommended_decision_id %><br>
+    <%= f.text_field :recommended_decision_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

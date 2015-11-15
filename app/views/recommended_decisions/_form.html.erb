@@ -1,0 +1,21 @@
+<%= form_for(@recommended_decision) do |f| %>
+  <% if @recommended_decision.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@recommended_decision.errors.count, "error") %> prohibited this recommended_decision from being saved:</h2>
+
+      <ul>
+      <% @recommended_decision.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :content %><br>
+    <%= f.text_field :content %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
